@@ -1,13 +1,23 @@
+:root {
+  --bg: #FBF6E9;
+  --text: #58402E;
+  --heading: #43593B;
+  --nav-bg: #58402E;
+  --border: #ACAD79;
+  --link-hover: #7CC1E7;
+  --highlight: #F2D17E;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 header {
-  background-color: #1a1a1a;
+  background-color: var(--nav-bg);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -25,18 +35,28 @@ nav a {
   font-weight: 500;
 }
 nav a:hover {
-  color: #4CAF50;
+  color: var(--link-hover);
 }
 main {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
+h1, h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--heading);
+}
+
 .values {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 2rem;
+}
+.value {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
 }
 .value h2 {
   font-size: 1.1rem;
