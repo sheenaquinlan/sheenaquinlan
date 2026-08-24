@@ -62,3 +62,37 @@ h1, h2 {
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-card {
+  border-left: 3px solid var(--border, #ACAD79);
+  padding-left: 1rem;
+}
+.project-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.project-link, .cv-download {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--heading, #43593B);
+  font-weight: 600;
+  text-decoration: none;
+}
+.project-link:hover, .cv-download:hover {
+  color: var(--link-hover, #7CC1E7);
+}
+.cv-section {
+  margin-top: 3rem;
+  border-top: 1px solid var(--border, #ACAD79);
+  padding-top: 1.5rem;
+}
+.cv-download {
+  border: 1px solid var(--border, #ACAD79);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
